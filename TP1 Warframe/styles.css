@@ -1,0 +1,66 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.noDotList {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    gap: 3px;
+    right: 10px;
+}
+
+.noDotList a:hover {
+    opacity: 70%;
+}
+
+.resizeImage {
+    width: 40px;
+    height: 40px;
+}
+
+.resizeMain {
+    width: 93%;
+    text-align: center;
+    margin: auto;
+}
+
+.navigationBarImageResize {
+    width: 120px;
+    height: 120px;
+}
+
+.navigationBar {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigationBarSlot {
+    position: relative;
+    display: inline-block;
+    height: 105px;
+    width: 105px;
+    margin: 1px 4px 0px 4px;
+    background-color: #ECD4EE;
+    /* makes it so i can add more if i wanted to */
+}
+
+.navigationBarSlotTitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #004F71;
+    /* i used https://gluckogon.github.io/warframe/wf_colors/index.html for the colors */
+    text-align: center;
+    color: #81DAD2;
+    font-size: 14px;
+    z-index: 1;
+}
