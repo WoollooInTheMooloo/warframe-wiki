@@ -8,6 +8,15 @@
     aspect-ratio: auto;
 }
 
+.headerTitle {
+    background-color: white;
+    border: 2px solid #004F71;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    top: 2px;
+}
+
 .noDotList {
     list-style-type: none;
     position: fixed;
@@ -100,7 +109,7 @@ a.specialLinks:active:before {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 9px;
 }
 
 /* Track */
@@ -113,4 +122,44 @@ a.specialLinks:active:before {
 ::-webkit-scrollbar-thumb {
     background: #234EB9;
     border-radius: 10px;
+}
+
+/* for infoboxes */
+.infobox {
+    border: 3px solid #A4BCB8;
+    background-color: #D3DBDB;
+    color: black;
+    padding: 5px;
+    float: right;
+    font-size: 85%;
+    width: 300px;
+    margin: 3px;
+}
+
+.infoboxTitle {
+    font-size: large;
+    padding: 3px;
+    text-align: center;
+}
+
+.infoboxImage {
+    width: 300px;
+    height: auto;
+}
+
+.infoboxColumnTitle {
+    background-color: #51666A;
+    color: #9ABFD1;
+    text-align: center;
+}
+
+.infoboxColumn {
+    text-align: center;
+    border-bottom: 1.5px solid #004F71;
+}
+
+.infoboxLongTitle {
+    color: #9FC5D8;
+    background-color: #3C5155;
+    text-align: center;
 }
