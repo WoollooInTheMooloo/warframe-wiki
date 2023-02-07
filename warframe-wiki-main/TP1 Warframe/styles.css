@@ -1,0 +1,165 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    height: auto;
+    aspect-ratio: auto;
+}
+
+.headerTitle {
+    background-color: white;
+    border: 2px solid #004F71;
+    padding: 5px;
+    position: fixed;
+    z-index: 1;
+    top: 2px;
+}
+
+.noDotList {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    gap: 3px;
+    right: 10px;
+}
+
+.noDotList a:hover {
+    opacity: 70%;
+}
+
+.resizeImage {
+    width: 40px;
+    height: 40px;
+}
+
+.resizeMain {
+    width: 93%;
+    text-align: center;
+    margin: auto;
+}
+
+.navigationBarImageResize {
+    width: 120px;
+    height: 120px;
+}
+
+.navigationBar {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigationBarSlot {
+    position: relative;
+    display: inline-block;
+    height: 105px;
+    width: 105px;
+    margin: 1px 4px 0px 4px;
+    background-color: #ECD4EE;
+    /* makes it so i can add more if i wanted to */
+}
+
+.navigationBarSlotTitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #004F71;
+    /* i used https://gluckogon.github.io/warframe/wf_colors/index.html for the colors */
+    text-align: center;
+    color: #81DAD2;
+    font-size: 14px;
+    z-index: 1;
+}
+
+/* Link styling use .test class*/
+a.specialLinks {
+    position: relative;
+    text-decoration: none;
+}
+
+a.specialLinks::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #234EB9;
+    bottom: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+a.specialLinks:visited::before {
+    background-color: #AC7CDE;
+}
+
+a.specialLinks:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+a.specialLinks:active:before {
+    background-color: #FE0000;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #234EB9;
+    border-radius: 10px;
+}
+
+/* for infoboxes */
+.infobox {
+    border: 3px solid #A4BCB8;
+    background-color: #D3DBDB;
+    color: black;
+    padding: 5px;
+    float: right;
+    font-size: 85%;
+    width: 300px;
+    margin: 3px;
+}
+
+.infoboxTitle {
+    font-size: large;
+    padding: 3px;
+    text-align: center;
+}
+
+.infoboxImage {
+    width: 300px;
+    height: auto;
+}
+
+.infoboxColumnTitle {
+    background-color: #51666A;
+    color: #9ABFD1;
+    text-align: center;
+}
+
+.infoboxColumn {
+    text-align: center;
+    border-bottom: 1.5px solid #004F71;
+}
+
+.infoboxLongTitle {
+    color: #9FC5D8;
+    background-color: #3C5155;
+    text-align: center;
+}
